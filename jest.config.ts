@@ -1,9 +1,15 @@
-// jest.config.js
-/** @type {import('ts-jest').JestConfigWithTsJest} */
-export default {
+import type { JestConfigWithTsJest } from 'ts-jest';
+
+const config: JestConfigWithTsJest = {
   preset: 'ts-jest',
   testEnvironment: 'node'
-  // если вам нужны ESM-тесты на TypeScript, добавьте:
+  // Если вы используете ESM-модули в TypeScript, раскомментируйте следующие строки:
   // extensionsToTreatAsEsm: ['.ts'],
-  // globals: { 'ts-jest': { useESM: true } },
+  // globals: {
+  //   'ts-jest': {
+  //     useESM: true,
+  //   },
+  // },
 };
+
+export default config;
