@@ -1,1 +1,1 @@
-# Codewars
+# Мои задачки на Codewars
